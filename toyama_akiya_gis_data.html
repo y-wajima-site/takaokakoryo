@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="富山県の空き家問題をGISで分析するための候補データと活用例、公式入手先を整理した一覧。">
-<title>富山県の空き家問題｜GIS分析に使えるデータ一覧</title>
+<meta name="description" content="富山県の空き家問題を分析するための候補データと活用例、公式入手先を整理した一覧。">
+<title>富山県の空き家問題分析に使えるデータ一覧</title>
 <style>
 :root{--ink:#18322d;--muted:#5e716c;--line:#dce8e4;--bg:#f3f7f5;--card:#fff;--accent:#087f6b;--accent2:#e2f3ee;--warn:#a65b00}
 *{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;color:var(--ink);background:var(--bg);line-height:1.7}
@@ -21,7 +21,7 @@ a{color:var(--accent);text-underline-offset:3px} a:hover{opacity:.78}
 <body>
 <header class="hero"><div class="hero-inner"><div class="eyebrow">TOYAMA × VACANT HOUSES × GIS</div><h1>富山県の空き家問題<br>GIS分析に使えるデータ一覧</h1><p>空き家の現状、人口減少、生活利便性、災害リスク、土地利用、地域経済を地図上で組み合わせるための候補データと具体的な活用方法を整理しています。</p></div></header>
 <main class="wrap">
-<div class="note"><strong>使い方のポイント</strong>空き家データは市区町村単位が中心です。小地域・メッシュ・ポイントデータと重ねる場合は、分析単位をそろえ、集計・空間結合・距離計算を行ってください。</div>
+<div class="note"><strong>使い方のポイント</strong>検索から分析のヒントを検索できます</div>
 <div class="toolbar"><input id="q" type="search" placeholder="例：高齢化、洪水、駅、地価…" aria-label="表を検索"><select id="type" aria-label="地図形式で絞り込み"><option value="">すべての形式</option><option>行政区域</option><option>メッシュ</option><option>ポイント</option><option>ポリゴン</option><option>ライン</option></select><span class="count" id="count">10件</span></div>
 <div class="table-shell"><table><thead><tr><th>No.</th><th>データ</th><th>主な内容</th><th>地図形式・適性</th><th>活用例</th><th>公式入手先</th></tr></thead><tbody id="rows">
 <tr data-type="行政区域"><td data-label="No." class="num">01</td><td data-label="データ"><strong>住宅・土地統計調査</strong><br><span class="badge">目的変数</span><span class="badge">5年ごと</span></td><td data-label="主な内容">空き家数・空き家率、賃貸用・売却用・二次的住宅・その他の住宅、建築時期、腐朽・破損、住宅の構造。</td><td data-label="地図形式・適性"><span class="badge">行政区域</span><div class="stars">★★★★☆</div>都道府県・市区町村中心。公表範囲に注意。</td><td data-label="活用例">空き家率のコロプレス図を作り、空き家の種類別構成を比較する。「その他の住宅」の割合を使えば、市場流通していない空き家の集中地域を抽出できる。建築時期や腐朽・破損と組み合わせ、除却・改修・流通促進のどの施策が適するかを地域別に分類する。過去調査と比較して、増加速度の速い自治体を特定する。</td><td data-label="公式入手先" class="source"><a href="https://www.e-stat.go.jp/stat-search/files?toukei=00200522" target="_blank" rel="noopener">e-Stat 住宅・土地統計調査</a><small>総務省統計局／政府統計コード 00200522</small></td></tr>
